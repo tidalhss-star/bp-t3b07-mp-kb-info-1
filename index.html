@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 노래방 정보 | 최고의 가성비 노래방 추천</title>
+    <meta name="description" content="마포 노래방 정보를 한눈에! 마포구 대표 노래방 시설, 가격, 이용 후기까지. 합리적인 가격과 최신 시설을 갖춘 마포 노래방을 추천합니다. 전화 문의: 010-6279-0862">
+    <meta name="keywords" content="마포 노래방, 마포 노래방 정보, 마포구 노래방 추천, 마포 가성비 노래방, 마포 노래방 가격, 마포 노래방 후기">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <link rel="canonical" href="https://t3b07-mp-kb-info-1.vercel.app">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="마포 노래방 정보 | 최고의 가성비 노래방 추천">
+    <meta property="og:description" content="마포 노래방 정보를 한눈에! 마포구 대표 노래방 시설, 가격, 이용 후기까지. 합리적인 가격과 최신 시설을 갖춘 마포 노래방을 추천합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b07-mp-kb-info-1.vercel.app">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 노래방 정보 | 최고의 가성비 노래방 추천">
+    <meta name="twitter:description" content="마포 노래방 정보를 한눈에! 마포구 대표 노래방 시설, 가격, 이용 후기까지. 합리적인 가격과 최신 시설을 갖춘 마포 노래방을 추천합니다.">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "마포 노래방 정보",
+        "description": "마포구 대표 노래방 정보 제공 사이트. 최신 시설과 합리적인 가격의 노래방을 소개합니다.",
+        "url": "https://t3b07-mp-kb-info-1.vercel.app",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "서울특별시 마포구"
+        },
+        "priceRange": "₩₩"
+    }
+    </script>
+
+    <style>
+        /* CSS Reset & Base */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: system-ui, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #faf8f5;
+            color: #2d2a26;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: #2d2a26;
+        }
+
+        h1 { font-size: 2.8rem; margin-bottom: 24px; }
+        h2 { font-size: 2rem; margin-bottom: 20px; }
+        h3 { font-size: 1.4rem; margin-bottom: 16px; }
+
+        p { margin-bottom: 16px; color: #3d3a36; }
+        a { color: #e07a5f; text-decoration: none; transition: opacity 0.2s ease; }
+        a:hover { opacity: 0.75; }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #2d2a26;
+            border-bottom: 1px solid #e07a5f;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        .nav-logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #faf8f5;
+            letter-spacing: -0.02em;
+        }
+        .nav-logo span { color: #e07a5f; }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a {
+            color: #faf8f5;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 4px;
+            transition: border-color 0.2s ease;
+        }
+        .nav-links a:hover { border-bottom-color: #e07a5f; opacity: 1; }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #faf8f5;
+            transition: all 0.3s ease;
+        }
+
+        /* Mobile Nav */
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #2d2a26;
+                flex-direction: column;
+                gap: 0;
+                padding: 16px 24px;
+                border-top: 1px solid #e07a5f;
+            }
+            .nav-links.active { display: flex; }
+            .nav-links li { width: 100%; }
+            .nav-links a {
+                display: block;
+                padding: 12px 0;
+                border-bottom: 1px solid rgba(250, 248, 245, 0.1);
+            }
+            .nav-links li:last-child a { border-bottom: none; }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 72px;
+            border-bottom: 1px solid #e07a5f;
+            margin-bottom: 48px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .hero-visual {
+            aspect-ratio: 4 / 3;
+            background: linear-gradient(135deg, #e07a5f 0%, #2d2a26 80%);
+            border: 1px solid #2d2a26;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #faf8f5;
+        }
+        .hero h1 { font-size: 3rem; }
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: #5d5a56;
+            margin-bottom: 32px;
+            border-left: 2px solid #e07a5f;
+            padding-left: 20px;
+        }
+        .hero-cta {
+            display: inline-block;
+            background-color: #2d2a26;
+            color: #faf8f5;
+            padding: 14px 36px;
+            font-weight: 600;
+            border: 1px solid #2d2a26;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .hero-cta:hover {
+            background-color: #e07a5f;
+            color: #2d2a26;
+            border-color: #e07a5f;
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .hero { padding: 72px 0 48px; }
+            .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-visual { aspect-ratio: 16 / 9; }
+        }
+
+        /* Section */
+        section { padding: 72px 0; }
+        .section-divider {
+            border: none;
+            border-top: 1px solid #e07a5f;
+            margin: 0 auto 48px;
+            max-width: 960px;
+        }
+
+        /* Feature Cards (2-column grid) */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+        .feature-card {
+            border: 1px solid #2d2a26;
+            padding: 32px;
+            background-color: #ffffff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(45, 42, 38, 0.08);
+        }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 16px; display: block; }
+        .feature-card h3 { font-size: 1.2rem; margin-bottom: 12px; }
+
+        @media (max-width: 768px) {
+            .feature-grid { grid-template-columns: 1fr; gap: 32px; }
+            .feature-card { padding: 24px; }
+        }
+
+        /* Reviews */
+        .review-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 48px;
+        }
+        .review-card {
+            border: 1px solid #2d2a26;
+            padding: 28px;
+            background-color: #ffffff;
+            transition: box-shadow 0.2s ease;
+        }
+        .review-card:hover { box-shadow: 0 2px 8px rgba(45, 42, 38, 0.06); }
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: #5d5a56;
+        }
+        .review-author { font-weight: 600; color: #2d2a26; }
+        .review-date { font-size: 0.85rem; }
+        .review-stars {
+            color: #e07a5f;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+        .review-text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #3d3a36;
+        }
+
+        @media (max-width: 768px) {
+            .review-grid { grid-template-columns: 1fr; gap: 32px; }
+        }
+
+        /* Info Section */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+        .info-item {
+            padding: 24px 0;
+            border-bottom: 1px solid #dddcd9;
+        }
+        .info-item:last-child { border-bottom: none; }
+        .info-label {
+            font-weight: 600;
+            color: #2d2a26;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .info-value { color: #3d3a36; }
+
+        @media (max-width: 768px) {
+            .info-grid { grid-template-columns: 1fr; gap: 24px; }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d2a26;
+            color: #faf8f5;
+            padding: 48px 0 24px;
+            margin-top: 72px;
+        }
+        footer .container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        footer p, footer a { color: #cac6c2; }
+        footer a { color: #e07a5f; }
+        .footer-links {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        .copyright {
+            border-top: 1px solid rgba(250, 248, 245, 0.15);
+            padding-top: 24px;
+            font-size: 0.9rem;
+            color: #9a9692;
+        }
+
+        /* Utility */
+        .text-center { text-align: center; }
+        .mt-48 { margin-top: 48px; }
+        .mb-48 { margin-bottom: 48px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-logo">마포<span>노래방</span>정보</div>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#features">시설</a></li>
+                <li><a href="#reviews">후기</a></li>
+                <li><a href="#info">정보</a></li>
+                <li><a href="tel:010-6279-0862">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div>
+                <h1>마포 노래방,<br>최신 시설과 합리적인 가격</h1>
+                <div class="hero-subtitle">마포구에서 검증된 노래방 정보를 제공합니다. 2024년 기준 평균 만족도 4.7점, 업계 최고 수준의 음향 시스템을 갖춘 공간을 소개합니다.</div>
+                <a href="tel:010-6279-0862" class="hero-cta">전화 문의 010-6279-0862</a>
+            </div>
+            <div class="hero-visual">
+                🎤
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Features Section -->
+        <section id="features">
+            <div class="container">
+                <h2 class="text-center">왜 마포 노래방이 최적인가</h2>
+                <hr class="section-divider">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">🎵</span>
+                        <h3>프리미엄 음향 시스템</h3>
+                        <p>JBL 전문가용 스피커와 디지털 믹서를 갖춰 최적의 음질을 제공합니다. 2024년 리모델링 완료, 정기적인 장비 점검으로 항상 최상의 상태를 유지합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🕐</span>
+                        <h3>유연한 시간대 운영</h3>
+                        <p>오전 10시부터 익일 새벽 5시까지 운영. 시간대별 할인 요금제를 도입하여 주간 이용 시 최대 40% 할인 혜택을 제공합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🧼</span>
+                        <h3>청결 유지 시스템</h3>
+                        <p>매 이용객 퇴장 후 UV 살균과 전문 청소 서비스를 진행합니다. 객실 내 에어컨 필터는 월 2회 정기 교체로 쾌적한 환경을 보장합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📱</span>
+                        <h3>스마트 예약 시스템</h3>
+                        <p>전화 예약 시 실시간 객실 현황 확인 가능. 단체 예약(10인 이상) 시 추가 할인과 무료 음료 서비스가 제공됩니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <div class="container">
+                <h2 class="text-center">실제 이용자 후기</h2>
+                <hr class="section-divider">
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="review-author">🎤 김*수</span>
+                            <span class="review-date">2024.11.15</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">친구들과 주말에 다녀왔어요. 음향이 정말 좋고 마이크도 3개나 있어서 다 같이 부르기 좋았어요. 가격도 합리적이고 다음에 또 방문할게요.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="review-author">🎤 이*진</span>
+                            <span class="review-date">2024.11.02</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">회식 후에 갔는데 방이 넓고 깔끔해서 좋았습니다. 사장님이 친절하시고, 음악 선택도 다양해서 만족했어요. 추천합니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-meta">
+                            <span class="review-author">🎤 박*영</span>
+                            <span class="review-date">2024.10.28</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">오후 시간에 이용했는데 가격이 저렴해서 좋았어요. 시설도 깨끗하고 노래방 기계도 최신이에요. 별 하나 뺀 이유는 리모컨이 조금 불편했어요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section id="info">
+            <div class="container">
+                <h2 class="text-center">마포 노래방 상세 정보</h2>
+                <hr class="section-divider">
+                <div class="info-grid">
+                    <div>
+                        <div class="info-item">
+                            <span class="info-label">📍 위치</span>
+                            <span class="info-value">서울특별시 마포구 (홍대입구역 도보 5분 거리)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🕒 운영 시간</span>
+                            <span class="info-value">매일 10:00 - 05:00 (연중무휴)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">💰 요금 안내</span>
+                            <span class="info-value">주간(10-18시): 시간당 15,000원 / 야간(18-05시): 시간당 25,000원</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-item">
+                            <span class="info-label">👥 수용 인원</span>
+                            <span class="info-value">소형(2-4인), 중형(4-8인), 대형(8-15인) 객실 운영</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🎧 부가 서비스</span>
+                            <span class="info-value">무료 와이파이, 음료 서비스, 파티 패키지 할인</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📞 연락처</span>
+                            <span class="info-value"><a href="tel:010-6279-0862">010-6279-0862</a> (전화 예약 및 문의)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    
+
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">마포 노래방 정보 선택 전에 확인할 체크리스트와 실패 사례</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 포스트 메타정보포스트 기획 테마: 마포 노래방 정보 선택 전에 확인할 체크리스트와 실패 사례 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 자세한 내용 보기</p>
+      </div>
+      <a href="posts/checklist-001-rdqc79.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">Blade Runner Final Cut: 릭 데커드의 유니콘 꿈 시퀀스와 리들리 스콧 감독의 번복 아, 진짜... 파이널 컷에서 릭 데커드의 유니콘 꿈 시퀀스가 삽입된 진짜 이유는 무엇일까요? 그리고 이 모든 일이 리들리 스콧 감독의 인터뷰 번복으로 인한 것인지도 궁</p>
+      </div>
+      <a href="posts/checklist-002-1ya730p.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 메타정보포스트 기획 테마: 마포 노래방 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: aga-clinic.space ## 에드워드 스노 Snowden의 비밀 프로그램 슬라이</p>
+      </div>
+      <a href="posts/myth-002-rdqc79.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+</section>
+<footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="tel:010-6279-0862">전화 문의</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+            </div>
+            <p>마포 노래방 정보 | 서울 마포구 대표 노래방 정보 제공 사이트<br>
+            본 사이트는 정보 제공 목적으로 운영되며, 실제 업소와 협력 관계에 있습니다.</p>
+            <div class="copyright">
+                &copy; 2024 마포 노래방 정보. All rights reserved. | 사업자 정보: t3b07-mp-kb-info-1.vercel.app
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const links = document.querySelector('.nav-links');
+            links.classList.toggle('active');
+        }
+
+        // Close menu on link click (mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Close menu on outside click
+        document.addEventListener('click', function(event) {
+            const nav = document.querySelector('nav');
+            const hamburger = document.querySelector('.hamburger');
+            const links = document.querySelector('.nav-links');
+            if (!nav.contains(event.target) && links.classList.contains('active')) {
+                links.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+</html>
